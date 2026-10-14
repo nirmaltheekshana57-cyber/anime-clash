@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Anime Clash: Arcade & Training</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+  <h2>Anime Clash: Arcade & Training</h2>
+  <canvas id="gameCanvas" width="960" height="540"></canvas>
+  <p id="instructionText">Welcome to Anime Clash!</p>
+
+  <div id="controls">
+    <div id="mainMenuControls" style="display: block;">
+      <button class="btn" id="playBtn" style="background-color: #00ffcc; color: black; font-weight: bold; padding: 14px 25px; font-size: 16px;">▶ Play</button>
+      <button class="btn" id="settingsBtn" style="background-color: #333; color: white; padding: 14px 20px; font-size: 16px;">⚙️ Settings</button>
+    </div>
+
+    <div id="settingsControls" style="display: none;">
+      <p style="margin: 5px 0; font-size: 14px; color: #ffcc00;">Graphics Quality Optimization:</p>
+      <button class="btn" id="gfxLow" style="background-color: #444;">Low</button>
+      <button class="btn" id="gfxMed" style="background-color: #444;">Medium</button>
+      <button class="btn" id="gfxHigh" style="background-color: #00ffcc; color: black; font-weight: bold;">High [Active]</button>
+      <br>
+      <button class="btn" id="backToMenuFromSettings" style="background-color: #444; margin-top: 8px; padding: 6px 15px;">⬅ Back to Menu</button>
+    </div>
+
+    <div id="modeControls" style="display: none;">
+      <button class="btn" id="battleModeBtn" style="background-color: #ff4500; color: white; font-weight: bold; padding: 12px 20px;">⚔️ Battle Mode</button>
+      <button class="btn" id="practiceModeBtn" style="background-color: #2e8b57; color: white; font-weight: bold; padding: 12px 20px;">🥋 Practice Mode</button>
+      <br>
+      <button class="btn" id="backToMenuBtn" style="background-color: #444; margin-top: 8px; padding: 6px 15px;">⬅ Back to Menu</button>
+    </div>
+
+    <div id="selectControls" style="display: none;">
+      <button class="btn" id="pickTsunade" style="background-color: #00ffcc; color: black; font-weight: bold; padding: 12px 20px;">Play as Tsunade Senju</button>
+      <button class="btn" id="pickGojo" style="background-color: #9b59b6; color: white; font-weight: bold; padding: 12px 20px;">Play as Satoru Gojo</button>
+      <br>
+      <button class="btn" id="backToModeBtn" style="background-color: #444; margin-top: 8px; padding: 6px 15px;">⬅ Back to Modes</button>
+    </div>
+
+    <div id="fightControls" style="display: none;">
+      <button class="btn" id="leftBtn">◀ Left</button>
+      <button class="btn" id="jumpBtn">▲ Jump</button>
+      <button class="btn" id="rightBtn">Right ▶</button>
+      <button class="btn" id="meleeBtn" style="background-color: #d35400; font-weight: bold;">👊 Melee</button>
+      <button class="btn" id="attackBtn" style="background-color: #8b0000;">💥 Light Combo</button>
+      <button class="btn" id="heavyComboBtn" style="background-color: #b22222; font-weight: bold;">⚡ Heavy Combo</button>
+      <button class="btn" id="blackFlashBtn" style="background-color: #c0392b; font-weight: bold;">⬛ Black Flash</button>
+      <button class="btn" id="specialBtn" style="background-color: #008b8b;">🔵 Blue</button>
+      <button class="btn" id="skillBtn" style="background-color: #b8860b;">🔴 Red</button>
+      <button class="btn" id="awakenBtn" style="background-color: #0099ff;">✨ Purple</button>
+      <button class="btn" id="summonBtn" style="background-color: #ff69b4; display: none;">🐌 Katsuyu</button>
+      <button class="btn" id="resetBtn" style="background-color: #333;">🔄 Menu</button>
+    </div>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
