@@ -1,0 +1,87 @@
+/* ============================================================
+   SECTION A: BASE STYLES
+   ============================================================ */
+html, body {
+  background: #050505;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at center, #0a0a18 0%, #030306 70%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+}
+
+h2 {
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px #00ffcc, 0 0 24px rgba(0,255,204,0.5);
+  font-weight: 900;
+  margin: 8px 0 14px;
+}
+
+/* ============================================================
+   SECTION B: CANVAS
+   ============================================================ */
+canvas {
+  background: #0a0a12;
+  border: 3px solid #ffcc00;
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  box-shadow:
+    0 0 40px rgba(0,255,204,0.25),
+    0 0 80px rgba(155,89,182,0.15),
+    inset 0 0 20px rgba(255,204,0,0.15);
+  touch-action: none;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   SECTION C: CONTROLS LAYOUT
+   ============================================================ */
+#controls {
+  margin-top: 10px;
+  touch-action: none;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   SECTION D: BUTTONS
+   ============================================================ */
+.btn {
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #555;
+  font-size: 12px;
+  padding: 8px 10px;
+  margin: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.12s ease;
+  font-family: inherit;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
+.btn:hover { border-color: #00ffcc; }
+.btn:active {
+  background-color: #00ffcc;
+  color: black;
+  box-shadow: 0 0 18px #00ffcc;
+  transform: translateY(1px);
+}
+
+/* ============================================================
+   SECTION E: INSTRUCTION TEXT
+   ============================================================ */
+#instructionText {
+  font-style: italic;
+  color: #ffcc00;
+  text-shadow: 0 0 8px rgba(255,204,0,0.5);
+  min-height: 20px;
+}
